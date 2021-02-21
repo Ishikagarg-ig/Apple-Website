@@ -1,0 +1,220 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#button").click(function(){
+		   var a=$("#p").val();
+		   var b=$("#rp").val();
+		   if(a!=b)
+		   	{$('#c').append("<div class='alert alert-danger' style='margin-top:30px;width:550px;text-align:center'>Check Your Password</div>");
+ $('#button').addClass("btn btn-danger");}
+
+		});
+	});
+	</script>
+<script>
+  	function ab()
+    {
+      var a=document.getElementById("2").value;
+      var b=/^[a-zA-Z]+@[A-Za-z]+.com$/;
+      if(!a.match(b))
+      {
+               window.alert("Please enter correct E-mail address");
+      }
+      else 
+      {
+      	window.alert("Your Email has been sent successfully");
+      }
+    }
+    function abc()
+			{
+			var a=document.getElementById("a").value;
+			var b=/^[a-zA-Z]+@[A-Za-z]+.com$/;
+			if(a.match(b))
+					{
+						window.alert("Congrats you are subscribed to our newsletter")
+					}
+					else
+					{
+						window.alert("Please enter correct Email address")
+					}
+
+  </script>
+  <style>
+			 .modal-header{
+			 	background-color: #282020;
+			 	color:white;
+			 }
+			 .modal-body{
+			 	background-color: #282020;
+			 	color:white;
+			 }
+			 .modal-footer{
+			 	background-color:  #282020;
+			 	color:white;
+			 }
+	</style>
+	<script>
+		function ac()
+		{
+			var a=document.getElementById("9").value;
+			var b=/^[a-zA-Z]+@[A-Za-z]+.com$/;
+			var c=document.getElementById("p").value;
+			var d=document.getElementById("rp").value;
+			if(!a.match(b))
+			{
+               window.alert("Please enter correct E-mail address");
+			}
+			else if(c.match(d) && a.match(b))
+			{
+               window.alert("Your Account is successfully created");
+			}
+		}
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+      <a class="navbar-brand" style="color:white;font-size:35px;font-family:French Script MT" href="#">imApple</a>
+    </div>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index.html"><img src="balck apple.png" height="20px"></a></li>
+<li><a href="#"></a></li>
+<li><a href="macbook.html" style="color:white">Mac</a></li>
+<li><a href="#"></a></li>
+<li><a href="ipad.html" style="color:white">iPad</a></li>
+<li><a href="#"></a></li>
+<li><a href="iphone.html" style="color:white">iPhone</a></li>
+<li><a href="#"></a></li>
+<li><a href="watch.html" style="color:white">Watch</a></li>
+<li><a href="#"></a></li>
+<li><a href="#" style="color:white">TV</a></li>
+<li><a href="#"></a></li>
+<li><a href="#" style="color:white">Music</a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li>
+<div class="btn-group" style="padding-top:8px;">
+<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+<span class="glyphicon glyphicon-menu-hamburger"></span></button>
+<ul class="dropdown-menu">
+<li><a href="bag.html"><span class="glyphicon glyphicon-lock">Bag</span></a></li>
+<li><a href="#myModal" data-toggle="modal" ><span class="glyphicon glyphicon-envelope">EmailUs</span></a></li>
+<li><a href="about.html"><span class="glyphicon glyphicon-pencil">AboutUs</span></a></li>
+<li><a href="#mymodal" data-toggle="modal"><span class="glyphicon glyphicon-tasks">Newsletter</span></a></li>
+<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+<li><a href="help.html"><span class="glyphicon glyphicon-comment">ChatRoom</span>
+
+</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+</ul>
+</div>
+</nav>
+<div class="modal fade" id="mymodal" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Join our NEWSLETTER</h4>
+			</div>
+			<div class="modal-body">
+				<form>
+					
+					<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+							<input type="email" id="a" class="form-control" placeholder="Enter your Email address">
+
+						
+						</div><input type="checkbox">Yes, I would like to receive communications by email.
+				</form>
+				
+			</div>
+					<div class="modal-footer">
+					<center><input type="submit" class="btn btn-success"  value="Subscribe" data-dismiss="modal" onclick="abc()"></center>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+     <div class="media">
+    <div class="media-left">
+      <img src="image.png" class="media-object img-circle" style="width:80px;height:80px">
+    </div>
+    <div class="media-body">
+     <input type="text" class="form-control" style="width:280px;" placeholder="Name" required><br>
+     <input type="email" class="form-control" style="width:280px;" placeholder="Email Id" id="2"required><br>
+     </div>
+    <textarea rows=8 cols=90 placeholder="Message.."></textarea><br><br>
+    <button type="submit"class="btn btn-primary btn-lg" onclick="ab()" data-dismiss="modal">SEND</button>
+  </div>
+ 
+  
+  <!-- Right-aligned media object -->
+  
+      
+    </div>
+  </div>
+	<div class="row">
+		<div class="col-md-12" style="height:63px;background-color: #e1e1e1;"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-1" style="height:500px;background-color: #e1e1e1;">
+			</div>
+			<div class="col-md-4" style="background-image:url('CAPTURE.png');background-repeat:no-repeat;height:500px;background-size:cover">
+			</div>
+			<div class="col-md-6" style="height:500px">
+				<form>
+
+					<div class="container">
+						<h3>PLease Enter your details</h3>
+					<div class="form-group">
+						<input type="text" placeholder="Username" class="form-control" style="border: none;outline: none;border-bottom:2px solid  grey;margin-top:40px;background:none;width:550px;" required>
+					</div>
+					<div class="form-group">
+						<input type="email" placeholder="Email"  class="form-control" style="border: none;outline: none;border-bottom:2px solid grey;margin-top:30px;background:none;width:550px" id="9"required>
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password"  class="form-control" style="border: none;outline: none;border-bottom:2px solid grey;margin-top:30px;background:none;width:550px" id="p" required>
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Repeat password"  class="form-control" style="border: none;outline: none;border-bottom:2px solid grey;margin-top:30px;background:none;width:550px" id="rp" required>
+					</div>
+					
+				
+				</form>
+				<button type="button" class="btn btn-primary btn-block" style="margin-top:30px;width:550px" id="button" onclick="ac()">Create Your Account</button>
+					<div style="margin-top:30px">
+					<a href="login.html">Already Registered? Sign in.</a></div>
+					<div id="c"></div>
+			</div>
+		</div>
+			<div class="col-md-1" style="height:500px;background-color: #e1e1e1;">
+			</div>
+		</div>
+		<div class="row">
+		<div class="col-md-12" style="height:63px;background-color: #e1e1e1;"></div>
+		</div>
+
+  </div>
+</div>
+
+</body>
+</html>

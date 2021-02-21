@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>YOUR BAG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+      <link rel="stylesheet" href="css/menupage1.css">
+<script>
+  $(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".product").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+ });
+</script>
+  <style>
+#inp{
+			border-style: none;
+			background-color: transparent;
+			margin-left: 55px;
+		}
+</style>
+<script>
+    function ab()
+    {
+      var a=document.getElementById("2").value;
+      var b=/^[a-zA-Z]+@[A-Za-z]+.com$/;
+      if(!a.match(b))
+      {
+               window.alert("Please enter correct E-mail address");
+      }
+      else 
+      {
+        window.alert("Your Email has been sent successfully");
+      }
+    }
+    function abc()
+      {
+      var a=document.getElementById("a").value;
+      var b=/^[a-zA-Z]+@[A-Za-z]+.com$/;
+      if(a.match(b))
+          {
+            window.alert("Congrats you are subscribed to our newsletter")
+          }
+          else
+          {
+            window.alert("Please enter correct Email address")
+          }
+
+  </script>
+  <style>
+       .modal-header{
+        background-color: #282020;
+        color:white;
+       }
+       .modal-body{
+        background-color: #282020;
+        color:white;
+       }
+       .modal-footer{
+        background-color:  #282020;
+        color:white;
+       }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+<div class="container">
+  <div class="navbar-header">
+      <a class="navbar-brand" style="color:white;font-size:35px;font-family:French Script MT" href="#">imApple</a>
+    </div>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index.html"><img src="balck apple.png" height="20px"></a></li>
+<li><a href="#"></a></li>
+<li><a href="macbook.html" style="color:white">Mac</a></li>
+<li><a href="#"></a></li>
+<li><a href="ipad.html" style="color:white">iPad</a></li>
+<li><a href="#"></a></li>
+<li><a href="iphone.html" style="color:white">iPhone</a></li>
+<li><a href="#"></a></li>
+<li><a href="watch.html" style="color:white">Watch</a></li>
+<li><a href="#"></a></li>
+<li><a href="#" style="color:white">TV</a></li>
+<li><a href="#"></a></li>
+<li><a href="#" style="color:white">Music</a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li>
+<div class="btn-group" style="padding-top:8px;">
+<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+<span class="glyphicon glyphicon-menu-hamburger"></span></button>
+<ul class="dropdown-menu">
+<li><a href="bag.html"><span class="glyphicon glyphicon-lock">Bag</span></a></li>
+<li><a href="#myModal" data-toggle="modal" ><span class="glyphicon glyphicon-envelope">EmailUs</span></a></li>
+<li><a href="about.html"><span class="glyphicon glyphicon-pencil">AboutUs</span></a></li>
+<li><a href="#mymodal" data-toggle="modal"><span class="glyphicon glyphicon-tasks">Newsletter</span></a></li>
+<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+<li><a href="help.html"><span class="glyphicon glyphicon-comment">ChatRoom</span>
+
+</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+</ul>
+</div>
+</nav>
+<div class="modal fade" id="mymodal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Join our NEWSLETTER</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          
+          <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              <input type="email" id="a" class="form-control" placeholder="Enter your Email address">
+
+            
+            </div><input type="checkbox">Yes, I would like to receive communications by email.
+        </form>
+        
+      </div>
+          <div class="modal-footer">
+          <center><input type="submit" class="btn btn-success"  value="Subscribe" data-dismiss="modal" onclick="abc()"></center>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+     <div class="media">
+    <div class="media-left">
+      <img src="image.png" class="media-object img-circle" style="width:80px;height:80px">
+    </div>
+    <div class="media-body">
+     <input type="text" class="form-control" style="width:280px;" placeholder="Name" required><br>
+     <input type="email" class="form-control" style="width:280px;" placeholder="Email Id" id="2"required><br>
+     </div>
+    <textarea rows=8 cols=90 placeholder="Message.."></textarea><br><br>
+    <button type="submit"class="btn btn-primary btn-lg" onclick="ab()" data-dismiss="modal">SEND</button>
+  </div>
+ 
+  
+  <!-- Right-aligned media object -->
+  
+      
+    </div>
+  </div>
+  <form>
+    <div class="form-group">
+    <input type="text" placeholder="Search..." class="form-control" style="width:200px"
+    id="myInput">
+  </div>
+  </form>
+  <h1>Products</h1>
+<div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
+  </div>
+  
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/macbook.png" height="50px" width="150px">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">Mackbook Air</div>
+          </div>
+    <div class="product-price">114000</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">114000</div>
+  </div>
+ 
+
+   
+  <div class="product">
+    <div class="product-image">
+      <img src="img/macbook.jpg" height="60px" width="150px">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">Mackbook Pro</div>
+          </div>
+    <div class="product-price">209000</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">209000</div>
+  </div>
+ 
+  <div class="product">
+    <div class="product-image">
+      <img src="img/imac.jpg" style="height:80px;width:90px;">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iMac Pro</div>
+          </div>
+    <div class="product-price">345700</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">345700</div>
+  </div>
+ 
+  <div class="product">
+    <div class="product-image">
+      <img src="img/iphonexs.jpg"style="height:100px;width:50px;"  >
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iPhone Xs</div>
+          </div>
+    <div class="product-price">91131</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">91131</div>
+  </div>
+ 
+  <div class="product">
+    <div class="product-image">
+      <img src="img/iphonexr.jpg" style="height:100px;width:50px;">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iPhone Xr<sub><font size=2px></font></sub></div>
+          </div>
+    <div class="product-price">160</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">58000</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/iphonee.png" style="height:100px;width:50px;">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iPhone X</div>
+          </div>
+    <div class="product-price">58000</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">58000</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/iphone8.png" style="height:100px;width:80px;">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iPhone 8</div>
+          </div>
+    <div class="product-price">78690</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">78690</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/iphone7.jpg" style="height:100px;width:80px;">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iPhone 7</div>
+          </div>
+    <div class="product-price">37999</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">37999</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/iphone6.jpg" style="height:90px;width:60px;">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iPhone 6</div>
+          </div>
+    <div class="product-price">26999</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">26999</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/ipqad.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iPad</div>
+          </div>
+    <div class="product-price">27750</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">27750</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/ipad air.jpg" style="height:90px;width:140px;">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iPad Air</div>
+          </div>
+    <div class="product-price">44000</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">44000</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/ipad pro.jfif">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iPad Pro</div>
+          </div>
+    <div class="product-price">138000</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">138000</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/ipad mini.png">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">iPad Mini</div>
+          </div>
+    <div class="product-price">22750</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">22750</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/watchseries3.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">Watch Series 3</div>
+          </div>
+    <div class="product-price">26900</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">26900</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/watch seies 4.png">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">Watch Series 4 Nike+</div>
+          </div>
+    <div class="product-price">44000</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">44000</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="img/watch series4.png">
+    </div>
+    <div class="product-details">
+      <div class="product-title" style="font-size: 30px;margin-top:40px; margin-left: 80px;">Watch Series 4 Hermes</div>
+          </div>
+    <div class="product-price">97000</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">97000</div>
+  </div>
+ 
+  <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">1419919.00</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (18%)</label>
+      <div class="totals-value" id="cart-tax">255585.42</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">50.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">1675504.42</div>
+    </div>
+  </div>
+      
+     <a href="buy.html"> <button class="checkout">Proceed to Buy</button></a>
+
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/school_cart.js"></script>
+
+
+  
+
+<br><br><br><br>
+<div style="background-color:#FAFAFA;height:250px">
+  <div class="row">
+    <div class="col-md-3">
+      <br>
+      <ul style="list-style-type:none;font-size:12px">
+        <li style="font-size:15px"><b>Shop and learn</b></li>
+       <a href="mackbook.html" style="color:black"><li>Mac</li></a>
+        <a href="iphone.html" style="color:black"><li>iPhone</li></a>
+        <a href="ipad.html" style="color:black"><li>iPad</li></a>
+        <a href="watch.html" style="color:black"><li>Watch</li></a>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <br>
+      <ul style="list-style-type:none;font-size:12px">
+        <li></li>
+        <br>
+        <a href="about.html"style="color:black"><li>About Us</li></a>
+        <a href="#" style="color:black"><li>Invester Relation</li></a>
+        <a href="#" style="color:black"><li>Newsroom</li></a>
+        <a href="#" style="color:black"><li>Careers</li></a>
+        <a href="#" style="color:black"><li>Enviornment</li></a>
+        <a href="#"style="color:black"><li>Store Locator</li></a>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <br>
+      <ul style="list-style-type:none;font-size:12px">
+        <li></li>
+        <br>
+        <a href="#" style="color:black"><li><span class="glyphicon glyphicon-envelope">EmailUs</span></li></a>
+        <a href="#" style="color:black"><li><span class="glyphicon glyphicon-comment">ChatRoom</span></li></a>
+        <a href="#" style="color:black"><li><span class="glyphicon glyphicon-phone">Phone</span></li></a>
+        <a href="#" style="color:black"><li><span class="glyphicon glyphicon-tasks">NewsLetter</span></li></a>
+      </ul>
+    </div>
+    <br>
+    <div class="col-md-1">
+      <br>
+      <ul style="list-style-type:none;">
+        <a href="https://www.facebook.com/"> <li><img src="facebook.png" class="img-circle" style="height:30px;width:30px"></li></a>
+       
+         <a href="https://www.instagram.com/?hl=en"> <li><img src="insta.jpg" class="img-circle" style="height:30px;width:30px"></li></a>
+        
+         <a href="https://twitter.com/login"> <li><img src="twitter.jfif" class="img-circle" style="height:30px;width:30px"></li></a>
+        
+         <a href="https://www.youtube.com/"> <li><img src="you tube.png" class="img-circle" style="height:30px;width:30px"></li></a>
+      </ul>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

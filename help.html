@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<script>
+  function abc(){
+    window.alert('Your problem is submitted we will contact you soon');
+  }
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('#i').onclick(function(){
+        var a=$("#i").val();
+        $("#y").append("<div class='alert alert-success'>Write your"+a+"details</div>");
+      });
+    });
+  </script>
+<script>
+  $(document).ready(function(){
+    $('#ad').click(function(){
+      var i=$('#i').val();
+      $('#l').prepend("<li class='list-group-item' id='z'><h3><a href='#'>"+i+"</a></h3></li>");
+    });
+    $('#b1').click(function(){
+      var i2=$('#i2').val();
+      $('#d2').append("<div class='panel panel-default'><h4>"+i2+"</h4></div>");
+    });
+  });
+</script>
+<body>
+  <div class="container">
+    <div class="row"><h1><center><img src="apple.png" style="height:60px;width:60px">Welcome to Apple chat </center></h1></div>
+    <div class="row" style="height:500px;border:solid;">
+      <div class="col-lg-8" style="height:500px;border:solid;background-color:#68a2ff">
+        <div class="row" style="height:40px;border:solid;background-color:#2D3E50
+;"><a href="#my" data-toggle="modal" style="color:white;"><h4>Click to ask about your product</h4></a></div>
+<div id="y">
+      
+</div>
+        <br><div class="row" style="height:300px;border:solid;margin-right:40px;margin-top:40px;margin-left:40px;background-color:  #E6EAEB;overflow:scroll;" id="d2"></div>
+<div class="row" style="height:40px;border:solid;margin-right:40px;margin-left:40px;"><div class="input-group"><input type="text" placeholder="Enter your product description" class="form-control" id="i2"><span class="input-group-addon"><button type="button" id="b1" onclick="abc()"><i class="glyphicon glyphicon-send"></i></button></span></div></div>
+      </div>
+      <div class="col-lg-4" style="height:500px;border:solid;background-color:#2469d8;">
+        <ul class="list-group" id="l">
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="my">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4>Please enter your product name</h4>
+      </div>
+      <div class="modal-body">
+       <div class="input-group">
+         <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+         <input type="text" class="form-control" placeholder="product name" id="i">
+       </div>
+       <br>
+       <center><button type="button" class="btn btn-success" id="ad">Add</button></center>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
